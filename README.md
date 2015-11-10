@@ -14,6 +14,13 @@
 input元素需要被一元素包裹，并设置其样式position属性值为relative或者absolute
 
 ### 实例代码：
+
+#### Javascript
+
+```javascript
+angular.module('yourApp', ['ngPlaceholder']);
+```
+
 #### html:
 
 ```html
