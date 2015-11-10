@@ -19,7 +19,10 @@ input元素需要被一元素包裹，并设置其样式position属性值为rela
 
 ```html
 <div class=“input-wrap”>
-    <input type=“text” ng-placeholder=“文本” placeholder-method=“input” placeholder-class=“placeholder1">
+    <input type=“text” 
+        ng-placeholder=“文本” 
+        placeholder-method=“input” 
+        placeholder-class=“placeholder1">
 </div>
 ```
 
@@ -28,11 +31,11 @@ input元素需要被一元素包裹，并设置其样式position属性值为rela
 ```css
 .input-wrap {
     position: relative;
-    /* ... */
+    /* Other styles */
 }
 
 .placeholder1 {
     position: absolute;
-    /* … */
+    /* Other styles */
 }
 ```
