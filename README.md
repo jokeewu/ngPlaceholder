@@ -1,5 +1,5 @@
 ### 模块名称：ngPlaceholder
-### 指令名称：ngPlaceholder=“{{ text }}"
+### 指令名称：ngPlaceholder="{{ text }}"
 ### 辅助属性：
 
 #### placeholder-method = "focus(default)|input"(optional)
