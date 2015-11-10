@@ -1,11 +1,6 @@
-模块名称：ngPlaceholder
-====
-
-###指令名称：ngPlaceholder=“{{ text }}"
-====
-
-辅助属性：
-====
+### 模块名称：ngPlaceholder
+### 指令名称：ngPlaceholder=“{{ text }}"
+### 辅助属性：
 
     placeholder-method=“focus(default)|input”(options)
 
@@ -15,16 +10,12 @@
 
     placeholder-class=“placeholder(default)”(options)
 
-用法：
-====
+### 用法：
 
 input元素需要被一元素包裹，并设置其样式position属性值为relative或者absolute
 
-实例代码：
-====
-
-html:
-----
+### 实例代码：
+#### html:
 
 > \<div class=“input-wrap”>
 >     \<input type=“text” ng-placeholder=“文本” placeholder-method=“input” placeholder-class=“placeholder1">
