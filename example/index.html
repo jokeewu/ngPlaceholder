@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>ngPlaceholder Example</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .input-wrap {
+        width: 260px;
+        height: 40px;
+        position: relative;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .placeholder {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        line-height: 40px;
+        color: #333333;
+    }
+
+    </style>
 </head>
-<body>
-    
+<body ng-app="yourApp">
+    <h3>placeholder-method="blur"</h3>
+    <div class="input-wrap">
+        <input type="text" ng-placeholder="手机号码/账号">
+    </div>
+    <h3>placeholder-method="input"</h3>
+    <div class="input-wrap">
+        <input type="text" ng-placeholder="手机号码/账号" placeholder-method="input">
+    </div>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/angular/angular.min.js"></script>
     <script src="../src/ngPlaceholder.js"></script>
+    <script>
+    angular.module('yourApp', ['ngPlaceholder']);
+    </script>
 </body>
 </html>
